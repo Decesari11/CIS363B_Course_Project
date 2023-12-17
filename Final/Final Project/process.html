@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+
+    <link href="smartmenus/sm-core-css.css" rel="stylesheet" text="text/css">
+    <link href="smartmenus/sm-clean.css" rel="stylesheet" text="text/css">
+    <link href="FinalProjectStyle.css" rel="stylesheet" text="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="_js/jquery-1.11.0.min.js"></script>
+    <script src="smartmenus/jquery.smartmenus.min.js"></script>
+    <script src="jquery_validate/jquery.validate.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#main-menu').smartmenus();
+            $('#form2').hide();
+            $('#form2').fadeIn(5000);
+        }); // end ready
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Christopher DeCesari's Website</h1>
+
+        <ul id="main-menu" class="sm sm-clean">
+            <li><a href="Index_DeCesari.html">Home</a></li>
+
+            <li><a href="Education_DeCesari.html">My Education</a></li>
+
+            <li><a href="Skills_DeCesari.html">My Skills</a></li>
+            <li>
+                <a href="#">My Portfolio</a>
+
+                <ul>
+                    <li>
+                        <a href="#">Projects</a>
+                        <ul>
+                            <li><a href="https://github.com/Decesari11/CIS363B_Course_Project.git">My GitHub</a></li>
+                            <li><a href="https://cdecesari.wixsite.com/my-site/s-projects-basic">Wix Portfolio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="Contact_DeCesari.html">Contact</a></li>
+        </ul>
+
+        <form name="form2" id="form2" action="" method="post">
+
+            <h2>Submission Succesful</h2>
+            <p>Thank you! I will be contacting you at your preferred contact method shortly.</p>
+        </form>
+    </div>
+
+</body>
+</html>
+	<footer>
+        <p>Christopher DeCesari Final Project for CIS363B.</p> 
+        <a href="CIS363B Final Sources.docx" style="color:white;">Image Sources Document</a>
+	</footer>
+

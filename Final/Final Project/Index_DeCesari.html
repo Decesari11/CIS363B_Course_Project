@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Home</title>
+
+    <link href="smartmenus/sm-core-css.css" rel="stylesheet" text="text/css">
+    <link href="smartmenus/sm-clean.css" rel="stylesheet" text="text/css">
+    <link href="FinalProjectStyle.css" rel="stylesheet" text="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="_js/jquery-1.11.0.min.js"></script>
+    <script src="smartmenus/jquery.smartmenus.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#main-menu').smartmenus();
+            $('a').click(function () {
+                $(this).fadeOut('slow');
+                $('#box').toggle('slow');
+                $('#img').toggle('slow');
+            });
+        }); // end ready function
+    </script>
+
+</head>
+
+<body>
+    <h1>Christopher DeCesari's Website</h1>
+
+    <ul id="main-menu" class="sm sm-clean">
+        <li><a href="Index_DeCesari.html">Home</a></li>
+
+        <li><a href="Education_DeCesari.html">My Education</a></li>
+
+        <li><a href="Skills_DeCesari.html">My Skills</a></li>
+        <li>
+            <a href="#">My Portfolio</a>
+
+            <ul>
+                <li>
+                    <a href="#">Projects</a>
+                    <ul>
+                        <li><a href="https://github.com/Decesari11/CIS363B_Course_Project.git">My GitHub</a></li>
+                        <li><a href="https://cdecesari.wixsite.com/my-site/s-projects-basic">Wix Portfolio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li><a href="Contact_DeCesari.html">Contact</a></li>
+    </ul>
+
+    <a href="#">Click Me!</a>
+    <div id="box">
+        <h2>Hello there!</h2>
+        <p>
+            As a 28-year-old residing in Denver, Colorado, I find immense fulfillment in the roles of a devoted spouse and parent to two wonderful children,
+            accompanied by the joyous chaos of three lively dogs. My current pursuit of a bachelor's degree in Computer Information Systems at DeVry University underscores my
+            commitment to professional growth and technical expertise. My passion for gaming and cybersecurity not only serves as a source of personal enjoyment but also
+            as a driving force behind my career choices. <br>
+            Currently employed at Lockheed Martin, I am actively engaged in the dynamic field of cybersecurity.
+            Outside of my professional life, I savor moments with my family, immersing myself in the world of football and boxing, and relishing the camaraderie of
+            video games with friends during leisure time. This multifaceted perspective shapes my identity, blending the roles of a dedicated family person, ambitious student,
+            and passionate professional in the vibrant backdrop of Denver's cultural landscape.
+        </p>
+    </div>
+
+    <div id="img">
+        <img src="images\family.jpg"> <img src="images\dogs.jpg">
+    </div>
+
+</body>
+</html>
+
+<footer>
+    <p>Christopher DeCesari Final Project for CIS363B.</p>
+    <a href="CIS363B Final Sources.docx" style="color:white;">Image Sources Document</a>
+</footer>
